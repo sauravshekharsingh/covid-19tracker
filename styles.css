@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.container{
+	padding: 0 10%;
+}
+
+.header{
+	background-color: #121212;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title p{
+	font-weight: 700;
+	font-size: 28px;
+	text-align: center;
+}
+
+.main{
+	background: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.8) ),url('images/woman-wearing-face-mask-3902881.jpg');
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.main h1{
+	font-size: 26px;
+}
+
+.main h2{
+	font-size: 18px;
+	display: flex;
+	margin-right: 10px;
+}
+
+.main .updated{
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.updated-date{
+	padding-right: 10px;
+}
+
+.main .data{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.main .data div{
+	background-color: rgba(0,0,0,0.3);
+	flex-grow: 1;
+	flex-basis: 0;
+	margin: 20px 20px;
+	padding: 20px;
+	border-radius: 8px;
+	min-width: 120px;
+}
+
+.main .data div .label{
+	font-size: 20px;
+	padding: 4px 0;
+	border-bottom: 1px solid white;
+}
+
+.main .data img{
+	width: 20px;
+}
+
+.main .data div .number{
+	font-size: 32px;
+	padding: 10px 0;
+}
+
+.cnf{
+	color: #2980b9;
+}
+
+.dth{
+	color: #e74c3c;
+}
+
+.rec{
+	color: #27ae60;
+}
+
+.info-section{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+.info-section h1{
+	color: black;
+}
+
+.safety .banners{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.safety .banners img{
+	width: 180px;
+}
+
+.info-section p{
+	color: black;
+	font-weight: 700;
+	width: 70%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.donation{
+	background-color: black;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.donation h1,.donation p{
+	color: white;
+}
+
+.info-section img{
+	width: 128px;
+	padding: 20px;
+}
+
+.donation p{
+	width: 70%;
+	font-size: 40px;
+	padding-bottom: 40px;
+}
+
+.cta{
+	background-color: #1A237E;
+	color: white;
+	border: none;
+	padding: 10px;
+	width: 200px;
+	border-radius: 3px;
+	height: 20%;
+	box-shadow: 0 2px 2px 0 #283593, 0 2px 2px 0 #283593;
+}
+
+.cta:hover{
+	cursor: pointer;
+	background-color: #283593;
+	transition: 100ms ease-in-out;
+}
+
+.cta a{
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.download p{
+	font-size: 22px;
+	padding: 20px;
+	width: 40%;
+}
+
+.download img{
+	width: 200px;
+}
+
+.android-btn{
+	background-color: #1B5E20;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,1), 0 2px 2px 0 rgba(0,0,0,1);
+	margin: 10px;
+}
+
+.android-btn:hover{
+	background-color: #2E7D32;
+}
+
+.ios-btn{
+	background-color: #1A237E;
+	box-shadow: 0 2px 2px 0 #283593, 0 2px 2px 0 #283593;
+	margin: 10px;
+}
+
+.footer{
+	background-color: rgba(0,0,0,0.9);
+	text-align: center;
+	padding: 20px;
+}
+
+.footer p{
+	font-size: 16px;
+}
+
+.footer span{
+	color: red;
+}
+
+@media only screen and (max-width: 600px){
+	.main{
+		background: linear-gradient( rgba(0,0,0,.8), rgba(0,0,0,.8) ),url('images/woman-wearing-face-mask-3902885.jpg');
+		background-size: cover;
+	}
+
+	.updated{
+		flex-direction: column;
+	}
+
+	.safety .banners{
+		display: inline-block;
+		text-align: center;
+	}
+
+	.safety .banners .banner{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.donation p{
+		padding-top: 0;
+		font-size: 30px;
+	}
+
+	.download p{
+		width: 100%;
+	}
+}

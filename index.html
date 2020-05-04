@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID - 19 Tracker</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="shortcut icon" type="image/jpg" href="images/favicon.png">
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="This is a COVID - 19 statistics tracking website">
+</head>
+<body>
+	<div class="header container">
+		<div class="title">
+			<p>COVID - 19 Tracker</p>
+		</div>
+	</div>
+	<div class="main container">
+		<div class="updated"><h2>Last Updated : </h2><p class="updated-date">Date - </p><p class="updated-time">Time - </p></div>
+		<h1>Global Data</h1>
+		<div class="data">
+			<div class="total-confirmed card"><p class="label">Total Confirmed</p><p class="confirmed-no cnf number"></p><p class="confirmed-no-new cnf new-number">&uarr;</p></div>
+			<div class="total-death card"><p class="label">Total Deaths</p><p class="death-no dth number"></p><p class="death-no-new dth new-number">&uarr;</p></div>
+			<div class="total-recovered card"><p class="label">Total Recovered</p><p class="recovered-no rec number"></p><p class="recovered-no-new rec new-number">&uarr;</p></div>
+		</div>
+		<h1>India Data</h1>
+		<div class="data">
+			<div class="total-confirmed card"><p class="label">Total Confirmed</p><p class="confirmed-no-india cnf number"></p><p class="confirmed-no-india-new cnf new-number">&uarr;</p></div>
+			<div class="total-death card"><p class="label">Total Deaths</p><p class="death-no-india dth number"></p><p class="death-no-india-new dth new-number">&uarr;</p></div>
+			<div class="total-recovered card"><p class="label">Total Recovered</p><p class="recovered-no-india rec number"></p><p class="recovered-no-india-new rec new-number">&uarr;</p></div>
+		</div>
+	</div>
+	<div class="info-section safety container">
+		<h1>Safety Instructions</h1>
+		<div class="banners">
+			<div class="banner banner-1">
+				<img src="images/cleaning.png">
+				<p>Wash your hands regularly</p>
+			</div>
+			<div class="banner banner-2">
+				<img src="images/mask.png">
+				<p>Wear Masks when stepping outside of home</p>
+			</div>
+			<div class="banner banner-3">
+				<img src="images/illness.png">
+				<p>Practice Social Distancing</p>
+			</div>
+		</div>
+	</div>
+	<div class="info-section donation container">
+		<h1>Donate to PM Cares Fund</h1>
+		<img src="images/interface.png">
+		<p>Do your bit and help our country in fighting this pandemic.</p>
+		<button class="cta"><a href="https://www.pmcares.gov.in/en/">Donate Now</a></button>
+	</div>
+	<div class="info-section download container">
+		<h1>Arogya Setu App</h1>
+		<img src="images/ar_qr.jpg">
+		<p>Scan this QR Code to Download Now Or Proceed from the button below</p>
+		<button class="cta android-btn"><a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu">Download for Android</a></button>
+		<button class="cta ios-btn"><a href="https://www.apple.com/in/ios/app-store/">Download for iOS</a></button>
+	</div>
+	<div class="footer">
+		<p>Made with <span>&#10084;</span> in India</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
