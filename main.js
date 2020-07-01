@@ -23,16 +23,16 @@ $.getJSON("https://api.covid19api.com/summary",function(data){
 	$(".recovered-no-india-new").append(numberWithCommas(data.Countries[i].NewRecovered));
 });
 
-$.getJSON("https://api.covid19india.org/data.json",function(data){
-	var totalStates = data.statewise.length;
+$.getJSON("https://api.covid19india.org/data.json",function(data2){
+	var totalStates = data2.statewise.length;
 	for(i=0 ; i<totalStates ; i++){
-		if(data.statewise[i].state=="State Unassigned"){
+		if(data2.statewise[i].state=="State Unassigned"){
 			continue;
 		}
-		var statename = data.statewise[i].state;
-		var confirmed = data.statewise[i].confirmed;
-		var deaths = data.statewise[i].deaths;
-		var recovered = data.statewise[i].recovered;
+		var statename = data2.statewise[i].state;
+		var confirmed = data2.statewise[i].confirmed;
+		var deaths = data2.statewise[i].deaths;
+		var recovered = data2.statewise[i].recovered;
 		$(".statedatatable").after("<tr><td class='namestate'>" + statename + "</td>" + "<td class='cnf'>" + confirmed + "</td>" + "<td class='dth'>" + deaths + "</td>" + "<td class='rec'>" + recovered + "</td></tr>");
 	}
 });
