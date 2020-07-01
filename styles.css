@@ -271,7 +271,11 @@ tr:nth-child(even){
 		padding: 4px;
 	}
 
-	table tr td,th{
+	table tr td{
+		font-size: 14px;
+	}
+	
+	table tr th{
 		font-size: 14px;
 	}
 }
