@@ -107,6 +107,29 @@ html{
 	color: black;
 }
 
+.state-data{
+	background: black;
+}
+
+.state-data h1{
+	color: white;
+	padding-bottom: 40px;
+}
+
+table{
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+th,td{
+	border-bottom: 1px solid white;
+	padding: 10px;
+}
+
+tr:nth-child(even){
+	background-color: #080f1c;
+}
+
 .safety .banners{
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -238,5 +261,17 @@ html{
 
 	.download p{
 		width: 100%;
+	}
+
+	table{
+		width: 60vw;
+	}
+
+	th,td{
+		padding: 4px;
+	}
+
+	table tr td,th{
+		font-size: 14px;
 	}
 }
