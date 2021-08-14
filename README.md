@@ -1,3 +1,4 @@
-Coronavirus COVID 19 Statistics Tracking Website
+# COVID-19 Tracker
 
-Visit this website on https://sauravshekharsingh.github.io/covid-19tracker
+COVID-19 statistic tracking website using HTML, CSS, JavaScript, jQuery, and API Integration. 
+Link - https://sauravshekharsingh.github.io/covid-19tracker
