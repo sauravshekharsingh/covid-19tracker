@@ -23,7 +23,7 @@ $.getJSON("https://api.covid19api.com/summary",function(data1){
 	$(".recovered-no-india-new").append(numberWithCommas(data1.Countries[i].NewRecovered));
 });
 
-$.getJSON("https://api.covid19india.org/data.json",function(data2){
+$.getJSON("https://data.covid19india.org/data.json",function(data2){
 	var totalStates = data2.statewise.length;
 	for(i=0 ; i<totalStates ; i++){
 		if(data2.statewise[i].state=="State Unassigned"){
